@@ -1,3 +1,29 @@
 body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
+  color: #ccc;
   background-color: orange;
+  margin-top: 64px;
+}
+
+.column {
+  padding: 15px;
+  border: 1px solid #666;
+  margin: 5px 0;
+  background: #343436;
+}
+.column-main {
+  padding: 0px;
+  border: 0px solid #666;
+  margin: 0px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
