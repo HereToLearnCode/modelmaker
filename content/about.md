@@ -1,5 +1,13 @@
 ---
 title: About
+layout: about
 ---
-{{ .Title }}
-test about
+{{ partial "head" . }}
+{{ partial "header" . }}
+<div class="container-body">
+{{ define "main" }}
+
+{{ end }}
+About Page
+{{ partial "footer" . }}
+</div>
