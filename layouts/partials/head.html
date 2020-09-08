@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta charset="utf-8">
+
     {{ $style := resources.Get "/sass/main.scss" }}
 
         {{ $components := readDir "/assets/css/components" }}
@@ -12,7 +14,11 @@
 
 
     {{ $style = $style| resources.Fingerprint | resources.ToCSS | resources.Minify }}
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <title>{{ .Title }}</title>
+  </head>
+  <head>
+
   </head>

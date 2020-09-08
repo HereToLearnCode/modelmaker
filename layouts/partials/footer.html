@@ -28,14 +28,4 @@
   });
 
   navbarMenu.addEventListener("click", closeMobileNavbar);
-
-  document
-    .getElementById("options")
-    .querySelectorAll("input[name='navtype']")
-    .forEach((option) => {
-      option.addEventListener("change", (e) => {
-        const navType = e.target.id.split("-").join(" ");
-        navbarMenu.classList = "navbar-menu " + navType;
-      });
-    });
 </script>
