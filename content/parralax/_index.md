@@ -1,4 +1,0 @@
----
-type: "parralax"
-layout: "parralax"
----
