@@ -1,7 +1,11 @@
   {{ partial "head" . }}
   <body>
+
+        {{ partial "header" . }}
     {{ block "main" . }}
     {{ end }}
     <h1>{{ .Title }}</h1>
+
+          {{ partial "footer" . }}
   </body>
 </html>

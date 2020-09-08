@@ -14,7 +14,6 @@
 
 
     {{ $style = $style| resources.Fingerprint | resources.ToCSS | resources.Minify }}
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <title>{{ .Title }}</title>
